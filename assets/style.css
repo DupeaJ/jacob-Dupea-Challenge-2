@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background-color: rgb(63, 62, 60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+header h1{
+    margin: 10px;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 15px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    float: right;
+    font-size: 30px;
+    justify-content: right ;
+    text-align: center;
+    
+    width: 50%;
+    justify-content: space-between;
+}
+header nav a{
+    margin-left:50px;
+    text-decoration: none;
+    color:bisque ;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+ul li {
+    display:inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+     padding-left: 15px;
+}
+nav .flexbox-container  {
+    
+    margin: 10px;
+    border: 3px ;
+    color: antiquewhite;
+
+}
+section.banner {
+    background-image: url(./photos/Portland-panorama.jpg);
+    height: 225px; 
+    background-position: center 350px;
+    background-size: cover;
+}
+section p.subtitle{
+    display: flex;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+    border-radius: 4px;
+    position: relative;
+    top: 70%;
+    float: right;
+    right: 15px;
+}
+
+main{
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+main.info{
+             /* xzx */
+    }
+main .about-me{
+  color: rgb(123, 84, 35);
+    padding-right: 25px;
+    border-right: solid lightblue;
+    height: 150px;
+    margin-left:5%;
+}
+main div.flexbox-container h2{ 
+    font-size: 40px;
+    width: 100px;
+}
+
+
+    div.flexbox-container p{
+        padding-left: 20px;
+        font-size: 20px;
+        padding-right: 20px;
+        padding-bottom:15px;
+        padding-top: 10px;
+    }
+
+main div.flexbox-container .epsom {
+   
+   
+}
+main div.flexbox-container .ipsom {
+   
+    
+
+}
+@media (max-width: 1250px) {
+    /* … */
+  }
+  @media (max-width: 700px) {
+     /* ... */
+  }
