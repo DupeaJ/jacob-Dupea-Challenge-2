@@ -59,7 +59,7 @@ section.banner {
     background-image: url(./photos/Portland-panorama.jpg);
     height: 225px; 
     background-position: center 350px;
-    background-size: cover;
+   
 }
 section p.subtitle{
     display: flex;
@@ -73,48 +73,87 @@ section p.subtitle{
     right: 15px;
 }
 
-main{
+ main{
     display: flex;
     padding-top: 20px;
     flex-wrap: wrap;
 }
 
 main.info{
-             /* xzx */
+     padding-left: 5%;
     }
-main .about-me{
-  color: rgb(123, 84, 35);
+
+ main h2{
+    color: rgb(123, 84, 35);
     padding-right: 25px;
-    border-right: solid lightblue;
-    height: 150px;
-    margin-left:5%;
-}
-main div.flexbox-container h2{ 
     font-size: 40px;
-    width: 100px;
+    width: 150px;
+    text-align: right;
 }
 
-
-    div.flexbox-container p{
-        padding-left: 20px;
-        font-size: 20px;
-        padding-right: 20px;
-        padding-bottom:15px;
-        padding-top: 10px;
-    }
-
-main div.flexbox-container .epsom {
-   
-   
+main div.flexbox-container-about-me{
+  width: 88%;
 }
-main div.flexbox-container .ipsom {
+  
+main div.flexbox-container-about-me p{
+  padding: 20px;
+  font-size: 20px;
+ 
+     }   
+     div.flec-container{
+      display:flex;
+      padding-top: 20px;
+      padding-left: 5%;
+      height: 500px;
+     }
+     div.flec-container h3{
+      font-size: 40px;
+      color: rgb(123, 84, 35);
+    padding-right: 25px;
    
-    
+    width: 150px;
+    text-align: right;
+     }
+     div.flec-container div{
+      display: flex;
+      flex-direction: row;
+      height: 300px;
+      width: 88%;
+     
+      border-left: solid blue;
+      justify-content: center;
+      padding: 20px;
+      
+     }
+     
 
-}
-@media (max-width: 1250px) {
-    /* … */
-  }
-  @media (max-width: 700px) {
+  @media (min-width: 768px) {
      /* ... */
   }
+  @media (min-width: 321px) and(max-width:768px) {
+    /* … */
+  }
+  @media (max-width:320px){
+
+  }
+  /* fixes portland picture to cover when in a bigger screen */
+  @media (min-width:1629px)  {
+    section.banner{ background-size:cover;
+  }
+}
+@media (max-width:1311px) {
+  p.item-1 {
+    border-top: solid bisque;
+   
+  }
+}
+@media (min-width:1311px){
+  p.item-1{
+border-left: solid black;
+}
+}
+@media (min-width:1311px){
+  p.item-2{
+border-left: solid black;
+}
+}
