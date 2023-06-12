@@ -27,6 +27,31 @@
             </ul>
         </nav>
     </header>
+    <section id="about-me"> </section>
+    
+<script>
+    let section = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('header nav a');
+    window.onscroll = () ->{
+
+        section.forEach(sec =>{
+
+            let top = window.scrollY;
+            let offset = sec.offsetTop;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+             if(top >= offset && top < offset + height){
+                navLinks.forEach(links =>{
+                    links.classList.remove('active');
+                    document.querySelector('header nav a[href*=' + id +'] ').classList.add
+                    ('active');
+                });
+             };
+            });
+        };
+        
+</script>
     <section class="banner">
         <!-- <img src="./assets/photos/Portland-panorama.jpg"> -->
             <p class="subtitle">
@@ -54,24 +79,30 @@
         
     </main>
   <div class="flec-container">
+    <section id="work"> </section>
             <h3>Work</h3>
             <div class="box-1 fade">
                 
-                
-                <img class="blur" src="./assets/photos/desk-png.jfif" alt="Productive-Desk-Photo">
-<li class="first-box">converting into semantic</li>
+               
+                <img class="blur"  src="./assets/photos/desk-png.jfif" alt="Productive-Desk-Photo" ><a href="https://dupeaj.github.io/JacobDupeaChallenge-1/" id="logo"></a>
+<a href="https://dupeaj.github.io/JacobDupeaChallenge-1/">converting into semantic
+    
+</a>
+
             </div>
         </div>
         
         <div class="wide-container">
+            <section id="contacts"> </section>
             <h4>Other Work</h4>
-            <div class="flexboxes flexboxes-1">
-                <p>
+            <div class="flexboxes flexboxes-1 border-pop">
+                <p class="border-pop">
+                    
                 CSS</p></div>
             
          
-            <div class="flexboxes flexboxes-2">
-                <p>
+            <div class="flexboxes flexboxes-2 ">
+                <p class="slide-left">
                     HTML</p></div>
             </div>
         </div>

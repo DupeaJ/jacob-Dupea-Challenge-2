@@ -150,15 +150,20 @@ main div.flexbox-container-about-me p{
      .box-1:hover >img.blur {
       filter: none ;
      }
+     #logo{
+     
+     }
      /* converting to semantix picture tag */
-     div .box-1 li.first-box{
+     div .box-1 a{
       height:5ch;
       position: relative;
       font-size: 26px;
-      right: 70%;
+      right: 67%;
       list-style-type: none;
       background-color: #555;
-      top: 80%
+      text-decoration: underline;
+      top: 80%;
+      color: #dfdfdf;
      }
      /* other work flex container "css,html */
      section.other-work{
@@ -201,6 +206,15 @@ main div.flexbox-container-about-me p{
       background-image: url(./photos/desk-photo.jpeg);
       background-position: center;
       align-content: center;
+     }
+     .flexboxes-1:hover > .border-pop{
+      filter: invert(9);
+     }
+     .flexboxes-2:hover > p.slide-left{
+      transform: translateY(0);
+     }
+     .flexboxes-2:hover > p.slide-left{
+      transform: translateY(-100%);
      }
      /* flexbox 2 top right quadrant styling/positioning */
      .flexboxes-2{
@@ -303,27 +317,28 @@ border: solid wheat 10px;
       text-decoration: underline;
     }
 
-
-
-
-
-
-
-
-  @media (min-width: 768px) {
-     /* ... */
-  }
-  @media (min-width: 321px) and(max-width:768px) {
-    /* … */
-  }
-  @media (max-width:320px){
-
-  }
   /* fixes portland picture to cover when in a bigger screen */
   @media (min-width:1629px)  {
     section.banner{ background-size:cover;
   }
+  
 }
+@media (min-width:1450px)  {
+div.box-1 a {
+  right: 70%;
+}
+}
+@media (max-width:1497px)  {
+  div.box-1 a {
+    right: 68%;
+  }
+  }
+  @media (max-width:1155px)  {
+    div.box-1 a {
+      right: 63%;
+    }
+    }
+
 @media (max-width:1311px) {
   p.item-1 {
     border-top: solid bisque;
