@@ -121,7 +121,7 @@ main div.flexbox-container-about-me p{
       flex-direction: row;
       height: 475px;
       width: 88%;
-     
+      margin-left: 30px;
       border-left: solid blue;
       justify-content: center;
       padding: 20px;
@@ -135,6 +135,9 @@ main div.flexbox-container-about-me p{
       filter: grayscale(50%);
       justify-content: center;
       left:10%;
+     }
+     .flexbox-container.paragraph{
+      margin-right: 30px;
      }
      div .box-1 li.first-box{
       height:5ch;
@@ -151,33 +154,79 @@ main div.flexbox-container-about-me p{
       height: 600px;
       padding-left: 5%;
      }
-     section.other-work div.wide-container{
-      display: flex;
-     }
-     div.box-6{
-      width: 500px;
-    height: 100px;
-    background: bisque;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    place-self: flex-end;
-     }
      
-     section.other-work div.wide-container h4{
+    
+     
+     .wide-container h4{
       font-size: 40px;
       color: rgb(123, 84, 35);
-    padding-right: 25px;
+    padding-right: 14px;
     font-size: 40px;
-    width: 150px;
+    width: 183px;
     text-align: right;
     border-right:solid black;
-    
      }
-     div.box-9{
-      flex-grow: 1;
+     
+     
+     .wide-container{
+      display: flex;
+      
+      padding-left: 5%;
      }
+     
+     .flexboxes {
+      
+      width: 500px;
+      margin: 10px;
+      margin-left: 8%;
+      
+      border: 3px solid #333;
+      background-color: #dfdfdf;
+      
+     }
+     
+     .flexboxes-1 {
+      border: solid green 5px;
+      display: flex;
+      align-items: end;
+      min-height: 200px;
+      background-image: url(./photos/desk-photo.jpeg);
+      background-position: center;
+      align-content: center;
+     }
+     .flexboxes-2{
+      display: flex;
+      align-items: end;
+      border:solid wheat 10px;
+      background-image: url(./photos/pyramid.jpg);
+      background-size: cover;
+   
+     }
+     .flexboxes.flexboxes-1 p{
+      background:green;
+      font-size: 30px;
+      border: solid green 10px;
+      color: wheat;
+     }
+     .flexboxes.flexboxes-2 p {
+      font-size: 30px;
+      background: wheat;
+      color: coral;
+border: solid wheat 10px;
+     }
+     
+     .flexboxes-2{
+      
+      min-height: 100px;
+     }
+     .last-boxes{
+      display: flex;
+      
+      border-left: solid #333;
+      justify-content: center;
+      margin-left: 16.18%;
+     }
+  
 
   @media (min-width: 768px) {
      /* ... */
