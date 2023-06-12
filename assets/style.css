@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+  padding-bottom: 500px;
+}
 
 header {
     background-color: rgb(63, 62, 60);
@@ -117,7 +119,7 @@ main div.flexbox-container-about-me p{
      div.flec-container div{
       display: flex;
       flex-direction: row;
-      height: 300px;
+      height: 475px;
       width: 88%;
      
       border-left: solid blue;
@@ -125,7 +127,57 @@ main div.flexbox-container-about-me p{
       padding: 20px;
       
      }
+     div .box-1 img{
+      width: 80%;
+      height:auto;
+      position: relative;
+      border: 10px solid #555;
+      filter: grayscale(50%);
+      justify-content: center;
+      left:10%;
+     }
+     div .box-1 li.first-box{
+      height:5ch;
+      position: relative;
+      font-size: 26px;
+      right: 70%;
+      list-style-type: none;
+      background-color: #555;
+      top: 80%
+     }
+     section.other-work{
+      display: flex;
+      background: #555;
+      height: 600px;
+      padding-left: 5%;
+     }
+     section.other-work div.wide-container{
+      display: flex;
+     }
+     div.box-6{
+      width: 500px;
+    height: 100px;
+    background: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    place-self: flex-end;
+     }
      
+     section.other-work div.wide-container h4{
+      font-size: 40px;
+      color: rgb(123, 84, 35);
+    padding-right: 25px;
+    font-size: 40px;
+    width: 150px;
+    text-align: right;
+    border-right:solid black;
+    
+     }
+     div.box-9{
+      flex-grow: 1;
+     }
 
   @media (min-width: 768px) {
      /* ... */
