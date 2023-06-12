@@ -4,9 +4,9 @@
     margin: 0;
 }
 body{
-  padding-bottom: 500px;
+  /* padding-bottom: 500px; */
 }
-
+/* header styling */
 header {
     background-color: rgb(63, 62, 60);
     display: flex;
@@ -15,6 +15,7 @@ header {
     
     
 }
+/* H1 heading style and positioning for "jacob Dupea" */
 header h1{
     margin: 10px;
     background-color: antiquewhite;
@@ -23,18 +24,18 @@ header h1{
     padding-right: 30px;
     border-radius: 5px;
 }
+/* header nav links styling and positioning */
 header nav {
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
     float: right;
     font-size: 30px;
     justify-content: right ;
     text-align: center;
-    
-    width: 50%;
+    width: 45%;
     justify-content: space-between;
 }
+/* nav ancor tags li decoration */
 header nav a{
     margin-left:50px;
     text-decoration: none;
@@ -42,6 +43,7 @@ header nav a{
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
+/* list styling for nav list */
 ul li {
     display:inline-block;
     flex-direction: row;
@@ -50,19 +52,20 @@ ul li {
     list-style-type: none;
      padding-left: 15px;
 }
+/* nav flexbox container positioning and styling */
 nav .flexbox-container  {
-    
     margin: 10px;
     border: 3px ;
     color: antiquewhite;
-
 }
+/* banner below nav bar */
 section.banner {
     background-image: url(./photos/Portland-panorama.jpg);
     height: 225px; 
     background-position: center 350px;
    
 }
+/* subtitle over banner image */
 section p.subtitle{
     display: flex;
     font-size: 40px;
@@ -74,17 +77,17 @@ section p.subtitle{
     float: right;
     right: 15px;
 }
-
+/* padding above about me section */
  main{
     display: flex;
     padding-top: 20px;
     flex-wrap: wrap;
 }
-
+/* about me flex container with heading and paragraphs */
 main.info{
      padding-left: 5%;
     }
-
+    /* heading 2 styling for "about me" and positioning */
  main h2{
     color: rgb(123, 84, 35);
     padding-right: 25px;
@@ -92,30 +95,31 @@ main.info{
     width: 150px;
     text-align: right;
 }
-
+ /* about me text boxes */
 main div.flexbox-container-about-me{
   width: 88%;
 }
-  
+  /* about me paragraph tag styling */
 main div.flexbox-container-about-me p{
   padding: 20px;
   font-size: 20px;
- 
-     }   
+  }   
+     /* "work" large container */
      div.flec-container{
       display:flex;
       padding-top: 20px;
       padding-left: 5%;
       height: 500px;
      }
+     /* heading 3 "work" styling */
      div.flec-container h3{
       font-size: 40px;
       color: rgb(123, 84, 35);
-    padding-right: 25px;
-   
-    width: 150px;
-    text-align: right;
+      padding-right: 25px;
+      width: 150px;
+      text-align: right;
      }
+     /* work big container  */
      div.flec-container div{
       display: flex;
       flex-direction: row;
@@ -127,18 +131,26 @@ main div.flexbox-container-about-me p{
       padding: 20px;
       
      }
+    
+    /* about me text left side */
+    .flexbox-container.paragraph{
+      margin-right: 30px;
+      }
+       /* first big image */
      div .box-1 img{
       width: 80%;
       height:auto;
       position: relative;
       border: 10px solid #555;
-      filter: grayscale(50%);
+      filter: blur(3px);
       justify-content: center;
       left:10%;
      }
-     .flexbox-container.paragraph{
-      margin-right: 30px;
+     
+     .box-1:hover >img.blur {
+      filter: none ;
      }
+     /* converting to semantix picture tag */
      div .box-1 li.first-box{
       height:5ch;
       position: relative;
@@ -148,15 +160,19 @@ main div.flexbox-container-about-me p{
       background-color: #555;
       top: 80%
      }
+     /* other work flex container "css,html */
      section.other-work{
       display: flex;
       background: #555;
       height: 600px;
       padding-left: 5%;
      }
-     
-    
-     
+     /* wide container with first side by side boxses */
+    .wide-container{
+      display: flex;
+      padding-left: 5%;
+    }
+    /* wide container heading 4 styling and positioning */
      .wide-container h4{
       font-size: 40px;
       color: rgb(123, 84, 35);
@@ -165,26 +181,18 @@ main div.flexbox-container-about-me p{
     width: 183px;
     text-align: right;
     border-right:solid black;
-     }
-     
-     
-     .wide-container{
-      display: flex;
       
-      padding-left: 5%;
      }
-     
+     /* flex boxs 1,2,3,4, of quadrants styling  */
      .flexboxes {
-      
       width: 500px;
       margin: 10px;
       margin-left: 8%;
-      
       border: 3px solid #333;
       background-color: #dfdfdf;
       
      }
-     
+     /* flexbox 1 top left quadrant styling/positioning */
      .flexboxes-1 {
       border: solid green 5px;
       display: flex;
@@ -194,6 +202,7 @@ main div.flexbox-container-about-me p{
       background-position: center;
       align-content: center;
      }
+     /* flexbox 2 top right quadrant styling/positioning */
      .flexboxes-2{
       display: flex;
       align-items: end;
@@ -202,31 +211,104 @@ main div.flexbox-container-about-me p{
       background-size: cover;
    
      }
+     /* flexbox 1 p tag styling top left quadrant */
      .flexboxes.flexboxes-1 p{
       background:green;
       font-size: 30px;
       border: solid green 10px;
       color: wheat;
      }
+     /* flexbox 2 p tag styling top right quadrant */
      .flexboxes.flexboxes-2 p {
       font-size: 30px;
       background: wheat;
       color: coral;
 border: solid wheat 10px;
      }
-     
+     /* flexbox top right of quadrant */
      .flexboxes-2{
       
       min-height: 100px;
      }
+     /* last 2 boxes 3,4 container */
      .last-boxes{
       display: flex;
-      
+      padding-left: 2ch;
       border-left: solid #333;
-      justify-content: center;
+      justify-content: flex-start;
       margin-left: 16.18%;
+      justify-content: flex-start;
      }
-  
+     /* flexbox 3 box */
+     .flexboxes-3  {
+      display: flex;
+      align-items: end;
+      border: solid blue 8px;
+      align-items: end;
+      min-height: 200px;
+      align-content: center;
+     }
+     /* flexbox 4 box */
+     .flexboxes-4 {
+      display: flex;
+      align-items: end;
+      margin-left: 9.2%;
+      border: solid maroon 9px;
+     }
+    
+
+
+     
+     /* flexbox 3 "java" p tag text */
+     .flexboxes.flexboxes-3 p {
+      font-size: 30px;
+      background: #4d4d4d;
+      color: blue;
+      border: solid #4d4d4d 10px;
+     }
+     /* flexbox 4 "flexbox" p tag text */
+     .flexboxes.flexboxes-4 p {
+      font-size: 30px;
+      background: maroon;
+      color: rgb(199, 199, 199);
+      border: solid maroon 10px;
+     }
+    /*footer all contacts  */
+    footer.contacts{
+      display: flex;
+
+    }
+    /* heading 5 "contact me" */
+    h5{
+      display: flex;
+      font-size: 40px;
+      margin: 10px;
+      width: 12%;
+      justify-content: end;
+      height: 150px;
+      margin-left: 4.3%;
+      text-align: right;
+      border-right: solid black;
+      padding-right: 8px;
+
+    }
+    /* last items in contacts section */
+    .flex-end {
+      font-size: 30px;
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+      flex:1;
+      align-items: center;
+      text-decoration: underline;
+    }
+
+
+
+
+
+
+
 
   @media (min-width: 768px) {
      /* ... */
