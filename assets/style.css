@@ -87,6 +87,11 @@ section p.subtitle{
 main.info{
      padding-left: 5%;
     }
+    main.info img{
+      height: 100px;
+      width: 100px;
+      top: 71%;
+    }
     /* heading 2 styling for "about me" and positioning */
  main h2{
     color: rgb(123, 84, 35);
@@ -94,10 +99,11 @@ main.info{
     font-size: 40px;
     width: 150px;
     text-align: right;
+    border-right: solid black;
 }
  /* about me text boxes */
 main div.flexbox-container-about-me{
-  width: 88%;
+  width: 80%;
 }
   /* about me paragraph tag styling */
 main div.flexbox-container-about-me p{
@@ -322,6 +328,13 @@ border: solid wheat 10px;
     section.banner{ background-size:cover;
   }
   
+}
+@media (max-width:1582px)  {
+ img.personal-photo{ 
+  left: 250px;
+  
+}
+
 }
 @media (min-width:1450px)  {
 div.box-1 a {
